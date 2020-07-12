@@ -15,6 +15,13 @@ body {
     font-family: "Open Sans";
 }
 
+
+/*Segunda forma de arrumar o float*/
+
+.clear {
+    clear: both;
+}
+
 .center {
     width: 1280px;
     margin: 0 auto;
@@ -189,4 +196,19 @@ body {
 
 .container-single img {
     width: 70px;
+}
+
+.footer {
+    /*Duas formas de arrumar u float*/
+    /*Primeira forma*/
+    /*clear: both;*/
+    border-top: 2px solid #888888;
+    padding: 20px 0;
+    text-align: center;
+    color: #888;
+    min-width: 1280px;
+}
+
+.footer p {
+    margin-top: 8px;
 }
