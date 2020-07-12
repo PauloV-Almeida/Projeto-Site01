@@ -51,8 +51,11 @@ body {
     float: right;
     position: relative;
     top: -15px;
-    border: 8px solid #ccc;
+    border: 8px solid rgba(120, 120, 120, 0.5);
     background-color: white;
+    /*para conseguir dar opacidade com o rgba*/
+    background-clip: padding-box;
+    /*background-origin tem o mesmo conceito so que para imagem*/
 }
 
 .form h2 {
@@ -104,4 +107,52 @@ body {
 
 .form input[type=submit]:hover {
     background-color: #323665;
+}
+
+.container-list {
+    padding: 30px;
+    margin-top: 40px;
+    float: left;
+    width: 619px;
+    height: 270px;
+    background-color: rgba(33, 35, 67, 0.7);
+}
+
+.container-list ul {
+    list-style-position: inside;
+}
+
+.container-list ul li {
+    margin-top: 18px;
+    color: white;
+}
+
+.container-2 {
+    padding: 40px 0;
+    width: 100%;
+    min-width: 1280px;
+    background-color: #DDDDDD;
+    text-align: center;
+}
+
+.container-2 h2 {
+    font-weight: normal;
+}
+
+.container-2 p {
+    width: 698px;
+    margin: 15px 0;
+    display: inline-block;
+    text-align: justify;
+}
+
+.arrow {
+    position: relative;
+    top: 60px;
+    left: 50%;
+    margin-left: -20px;
+    width: 40px;
+    height: 40px;
+    background-image: url('/imagens/arrow.png');
+    background-size: 100% 100%;
 }
